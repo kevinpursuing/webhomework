@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+/*设置导航*/
+
+.header {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 3px 10px #292929;
+}
+
+
+/*单行是设置它的实际高度height和所在行的高度line-height相等可实现文字垂直居中*/
+
+.head-word {
+    color: white;
+    font-size: 30px;
+    margin-left: 30px;
+    line-height: 80px;
+    font-family: "雅黑";
+    font-weight: 700;
+}
+
+
+/*设置课表*/
+
+caption {
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "楷体";
+    vertical-align: middle;
+}
+
+table {
+    width: 90%;
+    margin: 50px auto;
+border-collapse:collapse;
+    box-shadow: 0 0 5px black;
+    /*    table-layout:fixed
+    border-collapse:collapse;
+*/
+}
+
+td,
+th {
+border-collapse:collapse;
+    height: 58px;
+    width: 10%;
+    text-align: center;
+    font-size: 15px;
+    font-family: "雅黑";
+    font-weight: 700;
+    transition: all 0.2s linear;
+}
+
+td:hover,
+th:hover {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}

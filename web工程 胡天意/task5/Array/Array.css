@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+section{
+  margin: 20px;
+}
+/*设置输入框*/
+#B-Array{
+height: 35px;
+width: 300px;
+line-height: 25px;
+font-size: 25px;
+}
+/*设置确定按钮*/
+#btn{
+  margin-left: 150px;
+  width: 35px;
+  height: 35px;
+}
+#result{
+  line-height: 40px;
+  font-family: "微软雅黑";
+  font-size: 25px;
+}

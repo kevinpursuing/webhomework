@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*重置a标签的样式*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    /*初始化字体*/
+    font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", SimSun, "宋体", STXihei, "华文细黑", Heiti, "黑体", sans-serif;
+}
+
+
+/*设置公用类*/
+
+.white {
+    color: white;
+}
+
+
+/*创建图标字体*/
+
+@font-face {
+    font-family: "webpage-icon";
+    src: url(fonts/icomoon.eot) format("embedded-opentype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*设置顶部logo和搜索模块*/
+
+.top-logo-search {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    padding: 7px 5px;
+    border: 1px solid black;
+}
+
+
+/*设置logo*/
+
+.top-logo {
+    width: 80px;
+    height: 25px;
+    margin-right: 10px;
+    background: url(img/nav/logo.png);
+    -moz-background-size: cover;
+         background-size: cover;
+    float: left;
+}
+
+
+/*设置搜索栏*/
+
+.top-logo-search .top-search {
+    width: 180px;
+    margin-top: 5px;
+    height: 20px;
+    position: relative;
+    float: left;
+}
+
+.top-logo-search .top-search input {
+    height: 20px;
+    width: 180px;
+    border: 1px solid white;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    font-size: 12px;
+    padding-left: 5px;
+    background: rgba(238, 238, 238, 0.8);
+}
+
+.top-logo-search .top-search .search-icon {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    color: rgba(98, 98, 98, 0.8);
+    font-family: "webpage-icon";
+}
+
+
+/*设置顶栏登录*/
+
+.top-logo-search .top-clogin {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 3px;
+    margin: 3px;
+    font-size: 15px;
+    float: right;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    border: 1px solid rgb(159, 176, 192);
+}
+
+.top-logo-search .top-clogin span {
+    font-family: "webpage-icon";
+    font-size: 13px;
+}
+
+
+/*设置网站印象模块*/
+
+.web-impression {
+    width: 100%;
+    height: 230px;
+    background: rgb(44, 62, 80) url(img/web-impression/index.jpg);
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+
+/*设置导航模块*/
+
+nav {
+    width: 100%;
+    height: 125px;
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+
+/*设置导航子模块*/
+
+nav a section {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left;
+    width: 18%;
+    height: 80px;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-family: "webpage-icon";
+    font-size: 60px;
+    line-height: 80px;
+    color: white;
+    text-align: center;
+}
+
+nav a:nth-child(1) section {
+    background: rgb(29, 210, 175);
+}
+
+nav a:nth-child(2) section {
+    background: rgba(159, 121, 238, 1);
+}
+
+nav a:nth-child(3) section {
+    background: rgba(92, 172, 238, 1);
+}
+
+nav a:nth-child(4) section {
+    background: rgba(255, 140, 105, 1);
+}
+
+nav a:nth-child(5) section {
+    background: rgba(79, 79, 79, 1);
+}
+
+
+/*设置导航栏介绍*/
+
+.nav-introduction {
+    width: 100%;
+}
+
+.nav-introduction section {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left;
+    width: 18%;
+    height: 20px;
+    line-height: 30px;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(98, 98, 98);
+}
+
+
+/*设置景点介绍子模块*/
+
+.part1 {
+    width: 100%;
+    height: 469px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.part-nav {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+.part1 > section {
+    width: 48%;
+    height: 170px;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 10px;
+}
+
+
+/*设置图片展示部分*/
+
+.part1 > section div {
+    width: 100%;
+    height: 125px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.part1 section:nth-of-type(1) div {
+    background: url(img/content/part1/img1.jpg) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+.part1 section:nth-of-type(2) div {
+    background: url(img/content/part1/img2.jpg) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+.part1 section:nth-of-type(3) div {
+    background: url(img/content/part1/img3.jpg) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+.part1 section:nth-of-type(4) div {
+    background: url(img/content/part1/img4.jpg) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+
+/*设置图片展示文字介绍部分*/
+
+.part1 > section > section p:nth-child(1) {
+    font-size: 17px;
+    line-height: 20px;
+    color: rgb(29, 210, 175);
+}
+
+.part1 > section > section p:nth-child(2) {
+    font-size: 12px;
+    line-height: 15px;
+    color: rgb(98, 98, 98);
+}
+
+
+/*设置选择更多按钮*/
+
+.more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(44, 62, 80, 0.9);
+    color: white;
+    border: 1px solid rgba(44, 62, 80, 0.8);
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    padding: 5px;
+}
+
+
+/*设置旅游类型选择子模块*/
+
+.part2 {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 602px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.part2 > section {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+    padding: 6px;
+}
+
+.part2 > section:nth-of-type(1) {
+    background: rgba(29, 210, 175, 0.5);
+}
+
+.part2 > section:nth-of-type(2) {
+    background: rgba(159, 121, 238, 0.5);
+}
+
+.part2 > section:nth-of-type(3) {
+    background: rgba(92, 172, 238, 0.5);
+}
+
+.part2 > section:nth-of-type(4) {
+    background: rgba(255, 140, 105, 0.5);
+}
+
+.part2 > section:nth-of-type(5) {
+    background: rgba(79, 79, 79, 1);
+}
+
+
+/*设置旅游类型选择图片部分*/
+
+.part2 > section div {
+    height: 88px;
+    width: 88px;
+    float: left;
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    margin-left: 10px;
+}
+
+.part2 > section:nth-of-type(1) div {
+    background: url(img/content/part2/img1.jpg);
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+.part2 > section:nth-of-type(2) div {
+    background: url(img/content/part2/img2.jpg);
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+.part2 > section:nth-of-type(3) div {
+    background: url(img/content/part2/img3.jpg);
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+.part2 > section:nth-of-type(4) div {
+    background: url(img/content/part2/img4.jpg);
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+.part2 > section:nth-of-type(5) div {
+    background: url(img/content/part2/img5.jpg);
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+
+/*设置旅游类型选择介绍部分*/
+
+.part2 > section section {
+    overflow: hidden;
+    padding: 10px;
+    color: rgb(98, 98, 98);
+    font-size: 15px;
+}
+
+.part2 > section:nth-of-type(5) section {
+    color: white;
+}
+
+
+/*设置脚部*/
+
+footer {
+    width: 100%;
+    height: 89px;
+    background: rgb(44, 62, 80);
+}
+/*设置脚部网页信息*/
+footer .footer-information section {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 20%;
+    height: 25px;
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    line-height: 25px;
+    color: rgb(159,176,192);
+    background: rgba(74, 112, 139, 1);
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    margin-left: -webkit-calc(20%/8);
+    margin-left: -moz-calc(20%/8);
+    margin-left: calc(20%/8);
+    margin-right: -webkit-calc(20%/8);
+    margin-right: -moz-calc(20%/8);
+    margin-right: calc(20%/8);
+}
+/*设置脚部备注*/
+footer .memo{
+  line-height: 30px;
+  text-align: center;
+  font-size: 10px;
+  color: rgb(159,176,192);
+}

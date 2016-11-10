@@ -1,0 +1,859 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    min-width:1480px;
+    /*初始化字体*/
+    font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", SimSun, "宋体", STXihei, "华文细黑", Heiti, "黑体", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*创建图标字体*/
+
+@font-face {
+    font-family: "webpage-icon";
+    src: url(fonts/icomoon.eot) format("embedded-opentype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*创建公用类*/
+
+.maincolor {
+    color: rgb(29, 210, 175);
+}
+
+
+/*用div包裹子模块让其居中*/
+
+div[class*="-content"] {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/*设置头部样式*/
+
+.header {
+    width: 100%;
+}
+
+
+/*设置头部样式中的顶部导航*/
+
+.top-nav {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(44, 62, 80, 1);
+    -webkit-box-shadow: 0px 0px 5px black;
+       -moz-box-shadow: 0px 0px 5px black;
+            box-shadow: 0px 0px 5px black;
+}
+
+
+/*设置顶部导航登录模块*/
+
+
+/*利用雪碧图*/
+
+.login-msg-icon1 {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: white url(img/nav/top-nav-icon.png);
+    background-position: 85px 0px;
+}
+
+.login-msg-icon2 {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: white url(img/nav/top-nav-icon.png);
+    background-position: 85px 0px;
+}
+
+.login-msg-icon3 {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: white url(img/nav/top-nav-icon.png);
+    background-position: 45px 0px;
+}
+
+.login-msg a span {
+    color: rgb(29, 210, 175);
+}
+
+.login-msg {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    /*通过设置边框颜色使之呈现立体效果 以下不再赘述*/
+    border-right: 1px solid rgba(23, 32, 42, 1);
+    border-left: 1px solid rgba(55, 77, 99, 1);
+    color: white;
+    font-size: 15px;
+}
+
+.login-msg a {
+    color: white;
+}
+
+
+/*设置顶部导航授权模块*/
+
+div[class^="authorize"] {
+    float: right;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    color: white;
+    border-right: 1px solid rgba(23, 32, 42, 1);
+    border-left: 1px solid rgba(55, 77, 99, 1);
+    text-align: center;
+}
+
+
+/*利用雪碧图设置授权模块的图片*/
+
+.authorize1 {
+    background: white url(img/nav/top-nav_02.png);
+    background-position: 42px 0px;
+}
+
+.authorize2 {
+    background: white url(img/nav/top-nav_02.png);
+    background-position: 88px 0px;
+}
+
+.authorize3 {
+    background: white url(img/nav/top-nav_02.png);
+    background-position: 132px 0px;
+}
+
+.authorize4 {
+    background: white url(img/nav/top-nav_02.png);
+    background-position: 3px 0px;
+}
+
+
+/*设置主要导航样式*/
+
+.nav {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+
+/*设置logo样式*/
+
+.logo {
+    float: left;
+    padding-top: 15px;
+}
+
+.nav .n-content {
+    float: right;
+    height: 95px;
+}
+
+.n-content li {
+    float: right;
+    height: 95px;
+    list-style: none;
+}
+
+.n-content li > a {
+    display: block;
+    height: 95px;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 95px;
+}
+
+.n-content li > a:hover {
+    color: rgb(29, 210, 175);
+}
+
+
+/*设置导航栏搜索模块*/
+
+.n-content li .nav-search {
+    clear: both;
+    padding-top: 25px;
+}
+
+
+/*设置网页印象样式*/
+
+.web-impression {
+    width: 100%;
+}
+
+
+/*设置印象图片及文字*/
+
+.banner-img {
+    /*设定绝对定位来约束子元素*/
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: rgb(29, 210, 175) url(img/web-impression/Banner-img.png) no-repeat 0 0;
+}
+
+
+/*设置图片变化按钮*/
+
+.banner-img a {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    background-color: rgba(209, 209, 209, 0.3);
+    line-height: 80px;
+    font-size: 50px;
+    text-align: center;
+    color: rgba(209, 209, 209, 0.8);
+}
+
+.banner-img a:hover {
+    background-color: rgb(29, 210, 175);
+    color: white;
+}
+
+
+/*按钮垂直居中*/
+
+.banner-img .left-transform {
+    top: 50%;
+}
+
+.banner-img .right-transform {
+    top: 50%;
+    right: 0;
+}
+
+.banner-img .banner-title {
+    /*印象标题居中*/
+    width: 750px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+
+/*设置印象标题与子标题样式*/
+
+.banner-img .banner-title .b-p1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.banner-img .banner-title .b-p2 {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+
+/*设置标题跳转按钮*/
+
+.banner-img .banner-button input {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+}
+
+.banner-img .banner-button input:hover {
+    background-color: rgb(29, 210, 175);
+    border-color: rgb(29, 210, 175);
+}
+
+
+/*设置搜索模块*/
+
+.search {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 104px;
+    background-color: rgb(44, 62, 80);
+    border-top: 1px solid rgb(58, 78, 97);
+    overflow: hidden;
+}
+
+
+/*设置搜索模块标签*/
+
+.search .search-label {
+    float: left;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 103px;
+    width: 166px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-right: 1px solid rgb(58, 78, 97);
+}
+
+.search .search-label p:nth-child(1) {
+    color: rgb(159, 176, 192);
+}
+
+.search .search-label p:nth-child(2) {
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+
+/*设置搜索输入模块(配合响应式）*/
+
+.search .search-input {
+    float: left;
+    width: 80%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 103px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 2%;
+    overflow: hidden;
+}
+
+.search-input .where-when-label {
+    width: 10%;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    color: rgb(159, 176, 192);
+}
+
+.search-input input[type="text"] {
+    float: left;
+    height: 40px;
+    width: 30%;
+    line-height: 40px;
+    padding-left: 3px;
+}
+
+.search-input input[type="submit"] {
+    float: left;
+    height: 40px;
+    width: 10%;
+    margin-left: 5%;
+    background-color: transparent;
+    border: 1px solid white;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    color: white;
+    line-height: 40px;
+}
+
+.search-input input[type="submit"]:hover {
+    background-color: rgb(29, 210, 175);
+    border-color: rgb(29, 210, 175);
+}
+
+
+/*设置网页主内容模块*/
+
+.content {
+    width: 100%;
+    height: 1500px;
+}
+
+
+/*设置景点介绍图片*/
+
+.content .part1 {
+    width: 100%;
+    height: 637px;
+}
+
+
+/*设置景点图片介绍标题*/
+
+.part1 .part-h {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 230px;
+    padding-top: 85px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.part1 .part-h p:nth-child(1) {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(44, 62, 80, 1);
+}
+
+.part1 .part-h p:nth-child(2) {
+    color: rgba(69, 69, 69, 0.8);
+}
+
+
+/*设置景点介绍图片组*/
+
+.part1 .part1-imggroup {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 280px;
+    padding-left: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.part1-imggroup a > div {
+    position: relative;
+    height: 277px;
+    width: 15%;
+    float: left;
+    border: 5px solid rgb(238, 238, 238);
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    margin-right: 0.8%;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+
+/*为每一个图片模块设置动作事件*/
+
+.part1-imggroup a > div:hover {
+    height: 300px;
+    border: 5px solid rgb(29, 210, 175);
+}
+
+.part1-imggroup a > div:hover div {
+    background-color: rgba(44, 62, 80, 1);
+    color: white;
+}
+
+
+/*单独设置每个图片模块的背景*/
+
+.part1-imggroup a:nth-child(1) > div {
+    background: url(img/content/part1/img1.jpg) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+.part1-imggroup a:nth-child(2) > div {
+    background: url(img/content/part1/img2.jpg) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+.part1-imggroup a:nth-child(3) > div {
+    background: url(img/content/part1/img3.jpg) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+.part1-imggroup a:nth-child(4) > div {
+    background: url(img/content/part1/img4.jpg) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+.part1-imggroup a:nth-child(5) > div {
+    background: url(img/content/part1/img5.jpg) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+.part1-imggroup a:nth-child(6) > div {
+    background: url(img/content/part1/img6.jpg) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+
+/*设置图片模块的介绍部分*/
+
+.part1-img-introduce {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background-color: rgb(238, 238, 238);
+    padding-left: 10px;
+    padding-top: 15px;
+    color: rgba(69, 69, 69, 0.8);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.part1-img-introduce p:nth-child(2) {
+    font-size: 13px;
+}
+
+
+/*设置旅游类型选择模块*/
+
+.part2 {
+    width: 100%;
+    height: 517px;
+    background: url(img/content/part2/part2.png);
+}
+
+.part2 .part2-h {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    padding-top: 65px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.part2 .part2-h p:nth-child(1) {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+.part2 .part2-h p:nth-child(2) {
+    color: rgb(159, 176, 192);
+}
+
+
+/*设置旅游类型选择模块的图片模块*/
+
+.part2 .part2-imggroup {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.part2 .part2-imggroup > div {
+    float: left;
+    width: 160px;
+    height: 208px;
+    /*利用calc函数使模块均匀分布*/
+    margin-right: -webkit-calc((100% - 160px*6)/12);
+    margin-left: -webkit-calc((100% - 160px*6)/12);
+    color: white;
+}
+
+
+/*设置图标字体*/
+
+.part2 .part2-imggroup .part2-fonts {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 160px;
+    height: 160px;
+    border: 5px solid white;
+    -webkit-border-radius: 80px;
+       -moz-border-radius: 80px;
+            border-radius: 80px;
+    font-family: "webpage-icon";
+    text-align: center;
+    line-height: 140px;
+    font-size: 88px;
+    color: white;
+}
+
+.part2 .part2-imggroup > div:hover .part2-fonts {
+    border-color: rgb(29, 210, 175);
+    color: rgb(29, 210, 175);
+}
+
+.part2-imggroup > div:hover .part2-img-introduce {
+    color: rgb(29, 210, 175);
+}
+
+
+/*设置图标字体介绍*/
+
+.part2 .part2-imggroup .part2-img-introduce {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: rgb(159, 176, 192);
+    font-size: 20px;
+}
+
+
+/*设置顾客评价模块*/
+
+.part3 {
+    width: 100%;
+    height: 463px;
+}
+
+.part3 .part3-h {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 169px;
+    padding-top: 65px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.part3 .part3-h p:nth-child(1) {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(44, 62, 80, 1);
+}
+
+.part3 .part3-h p:nth-child(2) {
+    color: rgba(69, 69, 69, 0.8);
+}
+
+
+/*设置具体评论模块*/
+
+.part3-comment {
+    width: 100%;
+    height: 145px;
+    overflow: auto;
+}
+
+.part3-comment .part3-section {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 145px;
+    border: 1px solid rgb(222, 222, 222);
+    padding: 27px;
+    opacity: 0.5;
+    float: left;
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.part3-comment .part3-section:hover {
+    border: 1px solid rgb(222, 222, 222);
+    opacity: 1;
+    /*浅蓝色*/
+    border-top: 6px solid rgb(29, 210, 175);
+}
+
+
+/*设置评论子模块*/
+
+.part3-comment .part3-section div:nth-child(1) {
+    width: 100%;
+    height: 63px;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.part3-comment .part3-section div:nth-child(2) {
+    width: 100%;
+    height: 24px;
+    font-size: 20px;
+    color: rgb(29, 210, 175);
+    overflow: hidden;
+}
+
+.part3-comment .part3-section div:nth-child(3) {
+    width: 100%;
+    height: 17px;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+
+/*设置脚部*/
+
+.footer {
+    width: 100%;
+}
+
+
+/*设置网页底注信息模块*/
+
+.footer .webpage-message {
+    width: 100%;
+    height: 293px;
+    background: rgb(44, 62, 80);
+    border-bottom: 1px solid rgb(57, 76, 95);
+    margin-top: 80px;
+}
+
+
+/*底注信息子模块*/
+
+.footer .webpage-message-content > div {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 25%;
+    float: left;
+    height: 100%;
+    padding-top: 50px;
+    padding-right: 70px;
+    color: white;
+    font-size: 0.8em;
+    line-height: 1.8em;
+}
+
+.footer .webpage-message-content h1 {
+    font-size: 25px;
+    color: rgb(29, 210, 175);
+    font-weight: 600;
+    line-height: 30px;
+}
+
+
+/*设置Newsletter*/
+
+.webpage-message-content .Newsletter input[type="text"] {
+    width: 145px;
+    height: 30px;
+    margin-top: 10px;
+    color: black;
+    line-height: 25px;
+    font-size: 15px;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.webpage-message-content .Newsletter input[type="submit"] {
+    width: 50px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: transparent;
+    border: 1px solid white;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.webpage-message-content .Newsletter input[type="submit"]:hover {
+    background: rgb(29, 210, 175);
+}
+
+
+/*设置LastNews*/
+
+.LastestNews-img {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 38px;
+    height: 38px;
+    float: left;
+    padding: 5px;
+}
+
+
+/*设置tags*/
+
+.Tags > div {
+    height: 30px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid white;
+    float: left;
+    padding: 3px;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+    margin: 3px;
+}
+
+
+/*设置Address*/
+
+.Address-icon {
+    display: block;
+    margin-top: 20px;
+    font-family: "webpage-icon";
+    font-size: 28px;
+}
+
+.Address-icon span {
+    margin-right: 20px;
+}
+
+.Address-icon span:hover {
+    color: rgb(29, 210, 175);
+}
+
+
+/*设置底部备注*/
+
+.footer .memo {
+    padding-top: 35px;
+    width: 100%;
+    height: 158px;
+    background: rgb(44, 62, 80);
+    text-align: center;
+    color: white;
+}
+
+.footer .memo a {
+    font-size: 15px;
+    color: white;
+}
+
+.footer .memo a:hover {
+    color: rgb(29, 210, 175);
+}
+
+.footer .memo p:nth-child(2) {
+    line-height: 60px;
+    color: rgb(159, 176, 192);
+}

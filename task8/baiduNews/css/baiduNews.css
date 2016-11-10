@@ -1,0 +1,546 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: arial, sans-serif;
+}
+
+body .float-left {
+    float: left;
+}
+
+body .float-right {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wraper {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/*设置头部跳转模块*/
+
+.nav-header-container {
+    width: 100%;
+    height: 48px;
+    background: #3e98f0 url(http://m.news.baidu.com/static/news/webappreact/imgs/bg-news-logo_344ce44.png) no-repeat;
+    background-position: center 10px;
+    background-size: 65px auto;
+}
+
+.nav-header-container .baidu-icon {
+    background-position: center 6px;
+    margin-left: 8px;
+}
+
+.nav-header-container .profile-icon {
+    background-position: center -461px;
+    margin-left: 10px;
+}
+
+.nav-header-container .subscribe-icon {
+    background-position: center -105px;
+    margin-right: 8px;
+}
+
+.nav-header-container .search-icon {
+    background-position: center -160px;
+    margin-right: 10px;
+}
+
+.nav-header-container a {
+    width: 34px;
+    height: 100%;
+    background: url(http://m.news.baidu.com/static/news/webappreact/imgs/icon-bg_6e9bc53.png) no-repeat;
+    background-size: 40px 500px;
+}
+
+.profile-icon {
+    background-position: center -461px;
+    margin-left: 10px;
+}
+
+.subscribe-icon {
+    background-position: center -105px;
+    margin-right: 8px;
+}
+
+.search-icon {
+    background-position: center -160px;
+    margin-right: 10px;
+}
+
+
+/*设置个人信息子模块*/
+
+.user-info {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0
+}
+
+.profile-title {
+    background-color: #239bf0;
+    color: #fff;
+}
+
+.profile-title .profile-header {
+    position: relative;
+    height: 44px;
+}
+
+.profile-header .back-container {
+    position: absolute;
+    width: 34px;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.profile-header .back-container span {
+    display: block;
+    background: url(http://m.news.baidu.com/static/news/webappreact/imgs/icon-bg_6e9bc53.png) no-repeat;
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    background-position: center -216px;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-title .profile-info {
+    padding: 5px 0 25px;
+}
+
+.profile-info .profile-img-container {
+    text-align: center;
+    font-size: 100px;
+}
+
+.profile-img-container .img-wrapper {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.profile-img-container img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: block;
+}
+
+.profile-info .profile-name {
+    margin-top: 22px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+}
+
+.profile-nav {
+    margin: 0 17px;
+}
+
+.profile-nav .profile-nav-item {
+    border-bottom: 1px solid #f6f6f6;
+    padding: 15px 0;
+    color: #797979;
+    line-height: .16rem;
+}
+
+.profile-nav .msg i.icon {
+    background-position: -3px 3px;
+}
+
+.profile-nav .profile-nav-item i {
+    display: inline-block;
+    width: 20px;
+    height: 27px;
+    vertical-align: -7px;
+    margin-right: 7px;
+    background: url(http://m.news.baidu.com/static/news/webappreact/imgs/profile-icons_29e9e67.png) no-repeat;
+    background-size: 20.5px auto;
+}
+
+.favor i.icon {
+    background-position: -3px -32px;
+}
+
+.logout i.icon {
+    background-position: -3px -217px;
+    background-size: 23px auto;
+}
+
+.img-model i.icon {
+    background-position: -3px -72px;
+}
+
+.profile-nav .profile-nav-item i.un-selected {
+    background-position: 1px -148px;
+    background-size: 18.24px auto;
+    position: absolute;
+    right: 7px;
+}
+
+
+/*设置新闻搜索子模块*/
+
+.search-news {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+}
+
+header {
+    min-width: 320px;
+    height: 48px;
+    background-color: #3e98f0;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    overflow: hidden;
+}
+
+header .btn-back {
+    background-image: url(http://m.news.baidu.com/static/news/webappreact/imgs/icon-bg_6e9bc53.png);
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    background-repeat: no-repeat;
+    background-position: center -213px;
+}
+
+header .toolbar-l {
+    left: 8px;
+    float: left;
+}
+
+header .toolbar-l,
+header .toolbar-r {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    width: 34px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 48px;
+    height: 48px;
+}
+
+header .title {
+    display: inline-block;
+    line-height: 48px;
+    width: 75%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    vertical-align: top;
+}
+
+.search-box-container {
+    margin: 15px 17px 0;
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-pack: start;
+    z-index: 999;
+    height: 44px;
+    border: 1px solid #ececec;
+}
+
+.search-box-container .box-container {
+    -webkit-box-flex: 1;
+    height: 44px;
+    position: relative;
+}
+
+.box-autoCompete {
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    font-size: .16rem;
+    left: -2px;
+}
+
+.box-autoCompete ul {
+    list-style-type: none;
+    display: block;
+    background: #fff;
+}
+
+.box-container input[type=text] {
+    width: 85%!important;
+    height: 44px;
+    padding: 0 45px 0 0;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: auto;
+    right: 40px;
+    border: 0;
+    border-radius: 0;
+    background: 0 0;
+    -webkit-appearance: none;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.search-box-container .btn {
+    margin-left: 0;
+    border-left: 1px solid #ececec;
+    z-index: 0;
+    background: #fcfcfc;
+    overflow: hidden;
+    width: 83px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.hotsearch-container {
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    padding: 0 17px 14px;
+}
+
+.hotsearch-container h2 {
+    padding-left: 8px;
+    font-size: .16rem;
+    line-height: .16rem;
+    border-left: 3px solid #239bf0;
+    color: #262b31;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.hotsearch-container .list {
+    list-style-type: none;
+    display: block;
+}
+
+.hotsearch-container .list li {
+    padding: 12px 0 12px 34px;
+    border-bottom: 1px solid #f6f6f6;
+    background: url(http://m.news.baidu.com/static/news/webappreact/imgs/searchbox-hotword_41ffa98.png) -99px 0 no-repeat;
+    background-size: 28px auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.hotsearch-container .list li:nth-of-type(1) {
+    background-position: 2px -2px;
+}
+
+.hotsearch-container .list li:nth-of-type(2) {
+    background-position: 2px -47px;
+}
+
+.hotsearch-container .list li:nth-of-type(3) {
+    background-position: 2px -91px;
+}
+
+.hotsearch-container .list li:nth-of-type(4) {
+    background-position: 2px -136px;
+}
+
+.hotsearch-container .list li:nth-of-type(5) {
+    background-position: 2px -178px;
+}
+
+.hotsearch-container .list li:nth-of-type(6) {
+    background-position: 2px -224px;
+}
+
+.hotsearch-container .list li:nth-of-type(7) {
+    background-position: 2px -268px;
+}
+
+.hotsearch-container .list li:nth-of-type(8) {
+    background-position: 2px -314px;
+}
+
+.hotsearch-container .list li:nth-of-type(9) {
+    background-position: 2px -360px;
+}
+
+.hotsearch-container .list a {
+    display: block;
+    color: #262b31;
+}
+
+
+/*设置页面导航栏*/
+
+#index_view_navigator {
+    background-color: #3e98f0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+#index_view_navigator ul {
+    list-style-type: none;
+    display: block;
+}
+
+#index_view_navigator ul li {
+    position: relative;
+    text-align: center;
+    float: left;
+}
+
+#index_view_navigator ul li b {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    height: 12px;
+    width: 1px;
+    display: block;
+    overflow-y: hidden;
+    background-color: #5dabf0;
+}
+
+#index_view_navigator ul a {
+    color: #fff;
+    display: inline-block;
+    padding: 12px 0;
+}
+
+#index_view_navigator ul .selected a {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+
+/*设置页面内容*/
+
+.index-list-item {
+    position: relative;
+    border-bottom: 1px solid #f6f6f6;
+    overflow: hidden;
+    padding: 8.5px 0 10px;
+    margin: 0 17px;
+}
+
+.index-list-item > a{
+    display: block;
+}
+.index-list-item .index-list-main-text {
+    overflow: hidden;
+    -webkit-text-size-adjust: none;
+}
+
+.index-list-item .index-list-main-title {
+    font-size: 18px;
+    line-height: 26px;
+    color: #333;
+    max-height: 56px;
+    overflow: hidden;
+}
+
+.index-list-album-container {
+    margin: 2.5px 0 8px -1px;
+    overflow: hidden;
+    width: auto;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+    -webkit-box-align: stretch;
+    -webkit-box-lines: single;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: stretch;
+    -webkit-align-content: flex-start;
+    -webkit-flex-wrap: nowrap;
+}
+
+.index-list-album-container .index-list-album {
+    overflow: hidden;
+    width: 33.33%;
+    max-height: 111px;
+    position: relative;
+    -webkit-box-flex: 4;
+    -webkit-flex: 4 4 auto;
+    box-sizing: border-box;
+    margin-left: 1px;
+}
+
+.index-list-album-container .index-list-album-wrapper {
+    width: 100%;
+    text-align: right;
+}
+
+.index-list-album-container .index-list-album:first-child .index-list-album-wrapper img {
+    width: 100%;
+}
+
+.index-list-album-container img {
+    width: 100%;
+    height: 85.5px;
+    display: block;
+    max-height: 200px;
+}
+
+.index-list-bottom {
+    margin-top: 4px;
+    margin-bottom: 1px;
+}
+
+.index-list-main-time {
+    line-height: 17px;
+    height: 17px;
+    text-align: left;
+    font-size: 12px;
+    color: #b8bac0;
+    font-weight: 400;
+}
+
+.index-list-main-time .tip-time {
+    display: inline-block;
+    color: #999;
+    font-size: .13rem;
+    margin-right: 5px;
+    font-weight: 400;
+}
+
+.index-list-item #tip-strokeblue {
+    border: 1px solid #efb9b9;
+    color: #ef3f41;
+}
+
+.index-list-item .tip-tag {
+    width: auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+}
+
+.index-list-item .tip-tag {
+    text-align: center;
+    font-size: .1rem;
+    font-weight: 400;
+    padding: 0 1px;
+    color: #999;
+    border-radius: 2px;
+    display: inline;
+    max-width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

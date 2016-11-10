@@ -1,0 +1,82 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+article {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+}
+
+
+/*设置每个模块的样式*/
+
+article div {
+    width: 100px;
+    height: 100px;
+    background-color: #6495ED;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #6495ED;
+    opacity: 0.5;
+}
+
+article div:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 50px #3A5FCD;
+}
+
+
+/*设置中间图片的样式*/
+
+.center img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    transition: all 0.5s linear;
+}
+
+.center img:hover {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+
+/*设置每个模块的位置*/
+
+.pic1 {
+    position: absolute;
+    left: 100px;
+    top: 0px;
+}
+
+.pic2 {
+    position: absolute;
+    left: 0px;
+    top: 100px;
+}
+
+.center {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.pic4 {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+}
+
+.pic5 {
+    position: absolute;
+    left: 100px;
+    top: 200px;
+}

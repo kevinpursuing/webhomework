@@ -1,0 +1,474 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "webpage-icon";
+    src: url(fonts/icomoon.eot) format("embedded-opentype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    /*初始化字体*/
+    font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", SimSun, "宋体", STXihei, "华文细黑", Heiti, "黑体", sans-serif;
+}
+
+.wraper {
+  position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*设置头部*/
+
+header {
+    height: 61px;
+    width: 100%;
+    border-bottom: 1px solid rgba(232, 232, 232, 1);
+    font-size: 15px;
+}
+
+header section:hover {
+    background-color: rgba(247, 247, 247, 0.8);
+}
+
+.logo:hover {
+    background-color: transparent;
+}
+
+header span {
+    font-family: "webpage-icon";
+    color: #999;
+}
+
+.h-content {
+    width: 1300px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*设置图标*/
+
+.logo {
+    float: left;
+}
+
+
+/*设置天气*/
+
+.weather {
+    margin-left: 64px;
+    color: #999;
+    line-height: 60px;
+    height: 60px;
+    text-align: center;
+    width: 160px;
+    float: left;
+}
+
+
+/*设置日期*/
+
+.date {
+    color: #999;
+    line-height: 60px;
+    height: 60px;
+    text-align: center;
+    width: 138px;
+    float: left;
+}
+
+
+/*统一设置登录，邮箱，浏览器，换肤*/
+
+.login,
+.email,
+.browser,
+.face {
+    float: right;
+    color: #999;
+    line-height: 60px;
+    height: 60px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*设置搜索模块*/
+
+.m-content {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search {
+    margin-top: 45px;
+    margin-left: 245px;
+    width: 900px;
+    height: 60px;
+}
+
+
+/*设置百度logo*/
+
+.baidu-logo {
+    float: left;
+}
+
+.baidu-logo img {
+    width: 167px;
+    height: 57px;
+}
+
+
+/*设置搜索输入框*/
+
+.search-text {
+    height: 39px;
+    width: 464px;
+    margin-top: 19px;
+    margin-left: 37px;
+    float: left;
+    border: 1px solid #999;
+    border-right-color: transparent;
+    line-height: 39px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+
+/*设置搜索按钮*/
+
+.search-btn {
+    height: 41px;
+    float: left;
+    width: 114px;
+    margin-top: 19px;
+}
+
+
+/*设置热词模块*/
+
+.hot-words {
+    margin-left: 450px;
+    margin-top: 10px;
+    width: 900px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.hot-words span {
+    font-family: "webpage-icon";
+    color: #999;
+}
+
+.hot-words a {
+    margin-right: 7px;
+    color: black;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+/*设置导航栏*/
+
+nav {
+    width: 100%;
+    height: 41px;
+    margin-top: 10px;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+nav li {
+    width: calc(100%/11);
+    height: 100%;
+    background-color: rgba(10, 167, 112, 0.8);
+    float: left;
+    text-align: center;
+    line-height: 41px;
+    color: white;
+}
+
+nav li:hover {
+    background-color: rgba(10, 167, 112, 0.6);
+}
+
+#li1 {
+    background-color: #218868;
+}
+
+#li1:hover {
+    background-color: #218868;
+}
+
+
+/*设置侧边栏*/
+
+.side {
+    float: left;
+    width: 300px;
+    height: 500px;
+}
+
+.sidebar {
+    float: left;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 15px;
+    width: 300px;
+    height: 213px;
+    font-size: 16px;
+    line-height: 35px;
+    border: 1px solid rgba(153, 153, 153, 0.5);
+}
+
+.sidebar span {
+    font-family: "webpage-icon";
+}
+
+.sidebar a {
+    color: black;
+}
+
+.sidebar a:hover {
+    color: red;
+}
+
+
+/*设置侧边导航栏*/
+
+.small-nav {
+    width: 100%;
+    height: 34px;
+    float: left;
+}
+
+.small-nav ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.small-nav ul li {
+    float: left;
+    height: 100%;
+    width: calc(100%/5);
+    background-color: rgba(10, 167, 112, 0.8);
+    text-align: center;
+    line-height: 34px;
+    color: white;
+}
+
+.small-nav li:hover {
+    background-color: rgba(10, 167, 112, 0.6);
+}
+
+#li2 {
+    background-color: #218868;
+}
+
+
+/*设置轮换图片*/
+
+.side img {
+    width: 100%;
+    height: 150px;
+    float: left;
+}
+
+
+/*设置网站导航模块*/
+
+.web-nav {
+    box-sizing: border-box;
+    float: right;
+    margin-top: 10px;
+    width: calc(100% - 300px - 5px);
+    border: 1px solid rgba(10, 167, 112, 0.8);
+    height: 396px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.web-nav ul {
+    width: 100%;
+    height: 105px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.web-nav ul li {
+    float: left;
+    width: calc(100%/6);
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.web-nav ul li div {
+    width: 21px;
+    height: 19px;
+    background: url(网站图标雪碧图.png) no-repeat;
+    float: left;
+    margin-left: 0px;
+    margin-top: 8px;
+}
+
+
+/*设置不同网站的图标*/
+
+.web-nav ul li:nth-child(1) div {
+    background-position: 1px -199px;
+}
+
+.web-nav ul li:nth-child(2) div {
+    background-position: 1px -121px;
+}
+
+.web-nav ul li:nth-child(3) div {
+    background-position: 1px -319px;
+}
+
+.web-nav ul li:nth-child(4) div {
+    background-position: 1px -40px;
+}
+
+.web-nav ul li:nth-child(5) div {
+    background-position: 1px -159px;
+}
+
+.web-nav ul li:nth-child(6) div {
+    background-position: 1px -400px;
+}
+
+.web-nav ul li:nth-child(7) div {
+    background-position: 1px -479px;
+}
+
+.web-nav ul li:nth-child(8) div {
+    background-position: 1px -240px;
+}
+
+.web-nav ul li:nth-child(9) div {
+    background-position: 1px -359px;
+}
+
+.web-nav ul li:nth-child(10) div {
+    background-position: 1px -80px;
+}
+
+.web-nav ul li:nth-child(11) div {
+    background-position: 1px 1px;
+}
+
+.web-nav ul li:nth-child(12) div {
+    background-position: 1px -599px;
+}
+
+.web-nav ul li:nth-child(13) div {
+    background-position: 1px -440px;
+}
+
+.web-nav ul li:nth-child(14) div {
+    background-position: 1px -279px;
+}
+
+.web-nav ul li:nth-child(15) div {
+    background-position: 1px -479px;
+}
+
+.web-nav ul li:nth-child(16) div {
+    background-position: 1px -641px;
+}
+
+.web-nav ul li:nth-child(17) div {
+    background-position: 1px -520px;
+}
+
+.web-nav ul li:nth-child(18) div {
+    background-position: 1px -560px;
+}
+
+.web-nav ul li span {
+    display: block;
+    float: left;
+}
+
+.web-nav ul li a {
+    display: block;
+    margin-left: auto;
+    height: 100%;
+    margin-right: auto;
+}
+
+hr {
+    margin-top: 10px;
+}
+
+.ul2 {
+    width: 100%;
+    height: 210px;
+    margin-top: 18px;
+}
+
+.ul2 li:nth-child(25) a,
+.ul2 li:nth-child(26) a,
+.ul2 li:nth-child(27) a,
+.ul2 li:nth-child(28) a,
+.ul2 li:nth-child(29) a,
+.ul2 li:nth-child(30) a,
+.ul2 li:nth-child(31) a,
+.ul2 li:nth-child(32) a,
+.ul2 li:nth-child(33) a,
+.ul2 li:nth-child(34) a,
+.ul2 li:nth-child(35) a,
+.ul2 li:nth-child(36) a {
+    color: rgba(10, 167, 112, 1);
+}
+/*设置网站主题选择模块*/
+.color-select{
+  position: absolute;
+  width: 50px;
+  height:200px; 
+  left: 0;
+  top: 300px;
+}
+.color-select section{
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+.red{
+  background: rgba(238,59,59,1);
+}
+.black{
+  background: rgba(36,36,36,1);
+}
+.blue{
+  background: rgba(16,78,139,1);
+}
+.green{
+background: rgba(33,136,104,1);
+}

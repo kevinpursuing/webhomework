@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/calculator.css">
+</head>
+
+<body class="grey lighten-2">
+    <div class="wraper">
+        <!-- 计算器 -->
+        <article class="calculator z-depth-3 grey lighten-5">
+            <!-- 计算器头部 -->
+            <header>
+                <!-- 计算器头部标志 -->
+                <section class="logo">&#xf179</section>
+                <!-- 计算器头部文字介绍 -->
+                <section class="sentence">Designed by 在石叔的小教徒</section>
+            </header>
+            <!-- 计算器显示屏 -->
+            <section class="input-screen">
+                <input type="text" name="numScreen" class="screen" id="input" value="0" onfocus="this.blur()"></input>
+            </section>
+            <!-- 计算器输入按钮 -->
+            <section class="input-button">
+                <ul class="input-ul">
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="sin()">Sin</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="cos()">Cos</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="tan()">tan</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="clearscreen()">C</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="command(7)">7</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="command(8)">8</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="command(9)">9</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="plus()">+</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="command(4)">4</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="command(5)">5</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="command(6)">6</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="minus()">-</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="command(1)">1</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="command(2)">2</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="command(3)">3</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="times()">*</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="command(0)">0</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="dot()">.</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="equal()">=</a></li>
+                    <li><a class="waves-effect waves-teal btn-flat" onclick="divide()">/</a></li>
+                </ul>
+            </section>
+            <!-- 计算器错误显示 -->
+            <section class="error-alert"></section>
+            <!-- 计算器底部备注 -->
+            <section class="memo"></section>
+        </article>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/calculator.js"></script>
+</body>
+
+</html>

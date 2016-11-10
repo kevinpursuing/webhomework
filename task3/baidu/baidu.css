@@ -1,0 +1,209 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    behavior: url(csshover.htc);
+}
+
+.wraper {
+    height: 100%;
+    position: relative;
+    min-width: 810px;
+    min-height: 700px;
+    /*利用js*/
+    *width: expression((document.documentElement.clientWidth||document.body.clientWidth) < 810 ? "810px": "auto");
+    *height: expression((document.documentElement.clientHeight||document.body.clientHeight) < 710 ? "710px": "auto");
+}
+
+
+/*重置a标签的样式*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*设置导航栏样式*/
+
+.nav {
+    height: 100px;
+    width: 100%;
+}
+
+.nav ul {
+    float: right;
+    margin-top: 18px;
+    margin-right: 13px;
+}
+
+.nav li {
+    float: left;
+    list-style: none;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 25px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+
+/*设置导航栏不同类型模块的字体样式*/
+
+.nav ul .user {
+    font-weight: 200;
+}
+
+.nav ul .product {
+    text-decoration: none;
+    background-color: #38f;
+}
+
+.nav ul .product a {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 200;
+    color: white;
+    line-height: 24px;
+}
+
+.nav ul a {
+    text-decoration: underline;
+}
+
+.nav ul .user a:hover {
+    color: #00c;
+}
+
+
+/*设置图片样式*/
+
+.article .content {
+    position: absolute;
+    width: 100%;
+    height: 191px;
+    top: 20%;
+    text-align: center;
+}
+
+
+/*设置搜索模块样式*/
+
+.article .content .search {
+    height: 36px;
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+}
+
+
+/*设置搜索框样式*/
+
+.article .content .search .searchtext {
+    float: left;
+    width: 540px;
+    height: 33px;
+    padding-left: 5px;
+    border: 1px solid #b6b6b6;
+    outline: none;
+    border-color: #b8b8b8 #b8b8b8 #ccc #b8b8b8;
+    line-height: 33px;
+}
+
+.article .content .search .searchtext:hover {
+    border-color: #999 transparent #b3b3b3 #999;
+    *border-color: #999 #999 #b3b3b3 #999;
+}
+
+.article .content .search .searchtext:focus {
+    border-color: #3385ff;
+}
+
+
+/*设置搜索按钮样式*/
+
+.article .content .searchbutton {
+    float: left;
+    width: 93px;
+    height: 35px;
+    color: white;
+    background-color: #3385ff;
+    border: 3px solid #3385ff;
+    cursor: pointer;
+}
+
+.article .content .searchbutton:hover {
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    -webkit-box-shadow: 1px 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+
+/*设置底部*/
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+
+.footer .ft {
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*设置底部扫描模块*/
+
+.footer .ft .spread span {
+    float: left;
+    margin-left: 10px;
+}
+
+.footer .ft .spread span p {
+    font-size: 13px;
+    margin-top: 10px;
+    color: #999;
+}
+
+.footer .ft .spread span b {
+    color: #4c4c4c;
+}
+
+
+/*设置底部备注模块*/
+
+.footer .ft .memo {
+    float: left;
+    margin-left: 10px;
+}
+
+.footer .memo p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.footer .memo p a {
+    text-decoration: underline;
+}
+
+.footer .memo-p1 a {
+    color: #272727;
+}
+
+.footer .memo-p2 {
+    color: #8F8F8F;
+}
+
+.footer .memo-p2 a {
+    color: #666;
+}

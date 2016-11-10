@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    /*设置a标签的字体颜色为黑色*/
+    color: black;
+}
+
+
+/*设置导航栏*/
+
+.nav {
+    width: 100%;
+    height: 60px;
+}
+
+.note1 {
+    float: right;
+}
+
+.note1 li {
+    list-style: none;
+    float: left;
+    margin: 20px 20px;
+    font-weight: 600;
+}
+
+.nb {
+    border-style: none;
+    color: white;
+    background-color: #4876FF;
+    padding: 3px;
+}
+
+
+/*改变a标签中文字的颜色*/
+
+.note1 li a {
+    color: #515151;
+}
+
+
+/*设置logo的位置*/
+.dblog{
+    width: 100%
+    height:200px;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin-top: 90px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*设置搜索栏*/
+
+.search {
+    width: 600px;
+    margin: 20px auto;
+}
+
+.search li {
+    list-style: none;
+    float: left;
+}
+
+.sea {
+    border-style: none;
+    height: 31px;
+    width: 95px;
+    background-color: #436EEE;
+    color: white;
+}
+
+.sea:hover {
+    background-color: #3A5FCD;
+    box-shadow: 0 0 1px black;
+}
+
+
+/*设置footer*/
+
+.footer {
+    clear: both;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    display: block;
+    /*通过绝对定位设置底部位置*/
+    position: absolute;
+    bottom: 50px;
+}
+
+
+/*底部模块居中*/
+
+.spread {
+    width: 40%;
+    margin: 0px auto;
+}
+
+.span1 {
+    float: left;
+    margin-left: 10px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+
+/*设置备注*/
+
+.memo {
+    float: left;
+    margin-left: 30px;
+}
+
+.memo-p2 {
+    color: #8F8F8F;
+}
+
+.memo-p2 a {
+    color: #8F8F8F;
+}
+/*设置注册模块*/

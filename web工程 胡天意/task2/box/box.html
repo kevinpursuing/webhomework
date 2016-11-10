@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>盒模型</title>
+    <link rel="stylesheet" type="text/css" href="box.css">
+</head>
+
+<body background="img/index.jpg">
+    <article>
+        <div class="comparison">
+            <!-- 设置正常盒子 -->
+            <section class="normalbox">
+                <div class="n-wholebox">
+                    <div class="n-content">
+                        <p>我是正常盒子：200px*200px（在此填充的是内容,css定义元素的宽高即为内容宽高）</p>
+                    </div>
+                </div>
+            </section>
+            <!-- 设置怪异盒子 -->
+            <section class="strangebox">
+                <div class="s-wholebox">
+                    <div class="s-content">
+                        <p>我是怪异盒子:200px*200px宽高包括边距边框</p>
+                    </div>
+                </div>
+            </section>
+            <!-- cloumn分栏 -->
+            <section class="cloumn">
+                <p>cloumn分栏On the Web, tables have also been used to describe multi-column layouts. The main benefit of using CSS-based columns is flexibility; content can flow from one column to another, and the number of columns can vary depending on the size of the viewport. Removing presentation table markup from documents allows them to more easily be presented on various output devices including speech synthesizers and small mobile devices.On the Web, tables have also been used to describe multi-column layouts. The main benefit of using CSS-based columns is flexibility; content can flow from one column to another, and the number of columns can vary depending on the size of the viewport. Removing presentation table markup from documents allows them to more easily be presented on various output devices including speech synthesizers and small mobile devices.</p>
+            </section>
+        </div>
+        <hr/>
+        <!-- 旧版弹性盒子居中 -->
+        <section class="boxcenter">
+            <div class="oldbox">
+                旧版盒子居中
+            </div>
+        </section>
+        <!-- 新版弹性盒子水平分栏，垂直分栏，排序(flex) -->
+        <section class="flexbox">
+            <div class="horizontal">
+                <div class="b1">这个本来是第一个写的</div>
+                <div class="b2">这个本来是第二个写的</div>
+                <div class="b3">这个本来是第三个写的</div>
+            </div>
+            <div class="vertical">
+                <div class="b4">这个本来是第一个写的</div>
+                <div class="b5">这个本来是第二个写的</div>
+                <div class="b6">这个本来是第三个写的</div>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>

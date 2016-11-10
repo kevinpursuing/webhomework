@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.comparison {
+    width: 100%;
+    height: 500px;
+}
+
+
+/*设置正常盒子*/
+
+.n-wholebox {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    padding: 30px;
+    border: 8px solid black;
+    background-color: rgba(0, 255, 158, 0.5);
+}
+
+.n-content {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 71, 0, 0.8);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+/*设置怪异盒子*/
+
+.s-wholebox {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    padding: 30px;
+    border: 8px solid black;
+    background-color: rgba(0, 255, 158, 0.5);
+    box-sizing: border-box;
+}
+
+.s-content {
+    width: 124px;
+    height: 130px;
+    background-color: rgba(255, 71, 0, 0.8);
+    font-size: 1.1em;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+
+/*cloumn分栏*/
+
+.cloumn {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 500px;
+    height: 300px;
+    background-color: rgba(255, 56, 0, 0.6);
+    color: white;
+    -moz-column-width: 200px;
+    -moz-column-count: 3;
+    -webkit-column-width: 200px;
+    -webkit-column-count: 3;
+}
+
+
+/*旧版盒子居中*/
+
+.boxcenter {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 91, 255, 0.6);
+    border-radius: 30px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+}
+
+.oldbox {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 0, 0.6)
+}
+
+
+/*新版弹性盒子水平分栏，垂直分栏，排序(flex)，cloumn分栏*/
+
+
+/*水平分栏*/
+
+.horizontal {
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 0, 0.6);
+    display: -webkit-flex;
+    display: flex;
+}
+
+.horizontal .b1 {
+    background-color: rgba(238, 153, 34, 0.6);
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.horizontal .b2 {
+    background-color: rgba(255, 56, 0, 0.6);
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.horizontal .b3 {
+    background-color: rgba(53, 0, 255, 0.6);
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+
+/*垂直分栏*/
+
+.vertical {
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 0, 0.6);
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.vertical .b4 {
+    background-color: rgba(238, 153, 34, 0.6);
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-order: 3;
+}
+
+.vertical .b5 {
+    background-color: rgba(255, 56, 0, 0.6);
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.vertical .b6 {
+    background-color: rgba(53, 0, 255, 0.6);
+    -webkit-flex: 1;
+    flex: 1;
+}

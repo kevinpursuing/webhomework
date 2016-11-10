@@ -1,0 +1,258 @@
+h3{
+    font-family: "微软雅黑", sans-serif;
+    color: #000000;
+    position: absolute;
+    top: 35%;
+}
+/*舞台-舞台不能转但是可以调整镜头*/
+.stage{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    min-width: 300px;
+    height: 300px;
+    margin-left: -135px;
+    margin-top: -135px;
+    perspective:500px;
+}
+
+/*演员-*/
+.box{
+    transform-style: preserve-3d;
+    transform-origin: 135px 135px;
+    animation: rotate 7s infinite;
+}
+
+.front, .back, .left, .right, .top, .bottom{
+    width: 270px;
+    height: 270px;
+    position: absolute;
+}
+
+.front div, .back div, .left div, .right div, .top div, .bottom div{
+    width: 90px;
+    height: 90px;
+    float: left;
+    opacity: 0.7;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    line-height: 88px;
+    font-size: 60px;
+}
+
+/*前面*/
+.front1{
+    background-color: #3ca5fa;
+}
+.front2{
+    background-color: #faa132;
+}
+.front3{
+    background-color: #fa6186;
+}
+.front4{
+    background-color: #ac75fa;
+}
+.front5{
+    background-color: #fbfdff;
+}
+.front6{
+    background-color: #4dfaad;
+}
+.front7{
+    background-color: #fa6186;
+}
+.front8{
+    background-color: #fa6186;
+}
+.front9{
+    background-color:#747678 ;
+}
+
+/*后面*/
+.back1{
+    background-color: #4dfaad;
+}
+.back2{
+    background-color: #faa132;
+}
+
+.back3{
+    background-color:  #3ca5fa;
+}
+
+.back4{
+    background-color: #faa132;
+}
+
+.back5{
+    background-color: #ac75fa;
+}
+
+.back6{
+    background-color: #3ca5fa;
+}
+
+.back7{
+    background-color:  #fa6186;
+}
+
+.back8{
+    background-color: #4dfaad;
+}
+
+.back9{
+    background-color: #ac75fa;
+}
+
+/*左面*/
+.left1{
+    background-color:#3ca5fa;
+}
+.left2{
+    background-color: #fa6186;
+}
+.left3{
+    background-color:#faa132;
+}
+.left4{
+    background-color:#3ca5fa;
+}
+.left5{
+    background-color: #4dfaad;
+}
+.left6{
+    background-color:  #fa6186;
+}
+.left7{
+    background-color: #ac75fa;
+}
+.left8{
+    background-color: #ac75fa;
+}
+.left9{
+    background-color: #ac75fa;
+}
+
+/*右面*/
+.right1{
+    background-color: #faa132;
+}
+.right2{
+    background-color: #4dfaad;
+}
+.right3{
+    background-color: #faa132;
+}
+.right4{
+    background-color: #ac75fa;
+}
+.right5{
+    background-color: #faa132;
+}
+.right6{
+    background-color: #747678;
+}
+.right7{
+    background-color:  #fa6186;
+}
+.right8{
+    background-color:  #747678;
+}
+.right9{
+    background-color:#4dfaad;
+}
+
+/*顶部*/
+.top1{
+    background-color:#faa132;
+}
+.top2{
+    background-color:#747678;
+}
+.top3{
+    background-color:#faa132;
+}
+.top4{
+    background-color:#747678;
+}
+.top5{
+    background-color:#fa6186;
+}
+.top6{
+    background-color:#747678;
+}
+.top7{
+    background-color:#3ca5fa;
+}
+.top8{
+    background-color:#4dfaad;
+}
+.top9{
+    background-color:#ac75fa;
+}
+
+/*底部*/
+.bottom1{
+    background-color:#4dfaad;
+}
+.bottom2{
+    background-color:#747678;
+}
+.bottom3{
+    background-color:#3ca5fa;
+}
+.bottom4{
+    background-color:#fa6186;
+}
+.bottom5{
+    background-color:#747678;
+}
+.bottom6{
+    background-color:#4dfaad;
+}
+.bottom7{
+    background-color:#3ca5fa;
+}
+.bottom8{
+    background-color:#ac75fa;
+}
+.bottom9{
+    background-color:#3ca5fa;
+}
+
+.front{
+    transform: rotateY(0deg) rotateX(0deg) translateZ(135px);
+}
+
+.back{
+    transform: rotateY(0deg) rotateX(180deg)  translateZ(135px);
+}
+
+.left{
+    transform: rotateY(-270deg) rotateZ(0deg) translateZ(135px);
+}
+
+.right{
+    transform: rotateY(-90deg) rotateZ(0deg) translateZ(135px);
+}
+
+.top{
+    transform: rotateX(90deg) rotateZ(0deg) translateZ(135px);
+}
+
+.bottom{
+    transform: rotateX(270deg) rotateZ(0deg) translateZ(135px);
+}
+
+@keyframes rotate{
+    0%  	{transform: rotateY(0deg) rotateX(0deg) rotateZ(90deg);}
+    12.5% 	{transform: rotateY(90deg) rotateX(90deg) rotateZ(180deg);}
+    25% 	{transform: rotateY(180deg) rotateX(270deg) rotateZ(270deg);}
+    37.5% 	{transform: rotateY(270deg) rotateX(180deg) rotateZ(270deg);}
+    50%		{transform: rotateY(360deg) rotateX(0deg) rotateZ(270deg);}
+}
+
+

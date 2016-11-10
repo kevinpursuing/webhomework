@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*设置动画*/
+
+@-webkit-keyframes animations {
+    0% {
+        -webkit-transform: rotateX(0) rotateY(0);
+    }
+    20% {
+        -webkit-transform: rotateX(90deg) rotateY(0);
+    }
+    40% {
+        -webkit-transform: rotateX(90deg) rotateY(90deg);
+    }
+    60% {
+        -webkit-transform: rotateX(180deg) rotateY(90deg);
+    }
+    80% {
+        -webkit-transform: rotateX(180deg) rotateY(180deg);
+    }
+    100% {
+        -webkit-transform: rotateX(180deg) rotateY(270deg);
+    }
+}
+
+@-moz-keyframes animations {
+    0% {
+        -moz-transform: rotateX(0) rotateY(0);
+    }
+    20% {
+        -moz-transform: rotateX(90deg) rotateY(0);
+    }
+    40% {
+        -moz-transform: rotateX(90deg) rotateY(90deg);
+    }
+    60% {
+        -moz-transform: rotateX(180deg) rotateY(90deg);
+    }
+    80% {
+        -moz-transform: rotateX(180deg) rotateY(180deg);
+    }
+    100% {
+        -moz-transform: rotateX(180deg) rotateY(270deg);
+    }
+}
+
+
+/*设置正方体的容器*/
+
+.content {
+    width: 300px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+
+/*设置正方体*/
+
+.cube {
+    /*设置position是为了限制正方体六个面不跑出框架*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    /*设置视角基点*/
+    animation: animations 5s ease-out infinite;
+    -webkit-animation: animations 5s ease-out infinite;
+    -moz-animation: animations 5s ease-out infinite;
+    /*设置变换位置的基点*/
+    transform-origin: 150px 150px 0;
+    -webkit-transform-origin: 150px 150px 0;
+    -moz-transform-origin: 150px 150px 0;
+}
+
+
+/*设置正方体六个面的统一样式*/
+
+.cube div {
+    width: 300px;
+    height: 300px;
+    /*设置position的目的在于让六个面初始重叠，而且不互相影响*/
+    position: absolute;
+    /*设置里面的字体样式*/
+    font-size: 100px;
+    text-align: center;
+    line-height: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.top div,
+.behind div,
+.bottom div,
+.front div,
+.left div,
+.right div {
+    /*利用怪异盒子控制宽高*/
+    position: static;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 10px;
+    float: left;
+}
+
+
+/*设置六个面的空间位置以及颜色*/
+
+.cube .front {
+    transform: translateZ(150px);
+    -webkit-transform: translateZ(150px);
+    -moz-transform: translateZ(150px);
+}
+
+.cube .left {
+    transform: rotateY(-90deg) translateZ(150px);
+    -webkit-transform: rotateY(-90deg) translateZ(150px);
+    -moz-transform: rotateY(-90deg) translateZ(150px);
+}
+
+.cube .right {
+    transform: rotateY(90deg) translateZ(150px);
+    -webkit-transform: rotateY(90deg) translateZ(150px);
+    -moz-transform: rotateY(90deg) translateZ(150px);
+}
+
+.cube .top {
+    transform: rotateX(-90deg) translateZ(150px);
+    -webkit-transform: rotateX(-90deg) translateZ(150px);
+    -moz-transform: rotateX(-90deg) translateZ(150px);
+}
+
+.cube .bottom {
+    transform: rotateX(90deg) translateZ(150px);
+    -webkit-transform: rotateX(90deg) translateZ(150px);
+    -moz-transform: rotateX(90deg) translateZ(150px);
+}
+
+.cube .behind {
+    transform: rotateX(180deg) translateZ(150px);
+    -webkit-transform: rotateX(180deg) translateZ(150px);
+    transform: rotateX(180deg) translateZ(150px);
+}
+
+
+/*为六个面的小模块设置背景图片*/
+
+.top div {
+    background: url(img/top.png);
+}
+
+.front div {
+    background: url(img/front.png);
+}
+
+.bottom div {
+    background: url(img/bottom.png);
+}
+
+.left div {
+    background: url(img/left.png);
+}
+
+.behind div {
+    background: url(img/behind.png);
+}
+
+.right div {
+    background: url(img/right.png);
+}

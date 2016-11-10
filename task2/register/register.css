@@ -1,0 +1,233 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: white url(img/index.jpg);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*设置整体布局以让其居中*/
+
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    box-shadow: 0 0 10px black;
+    border-radius: 30px;
+    /*利用rgba最后一个数值实现背景透明而页面内容不透明*/
+    background-color: rgba(219, 219, 219, 0.5);
+}
+
+
+/*设置页面的头部*/
+
+.container header {
+    width: 100%;
+    height: 200px;
+}
+
+
+/*设置图片*/
+
+.container header img {
+    display: block;
+    float: left;
+    margin-left: 60px;
+    margin-top: 30px;
+    width: 128px;
+    height: 128px;
+}
+
+
+/*设置导航链接*/
+
+.container header nav {
+    height: 30px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 120px;
+}
+
+.container header nav li {
+    float: right;
+    height: 30px;
+    list-style: none;
+    padding-left: background-color: blue;
+}
+
+.container header nav li a {
+    display: block;
+    width: 80px;
+    color: black;
+    text-align: center;
+    font-family: "雅黑";
+    font-weight: 700;
+    line-height: 30px;
+    background-color: rgba(219, 219, 219, 0.5);
+    transition: all 0.2s linear;
+}
+
+.container header nav li a:hover {
+    font-size: 1.2em;
+}
+
+
+/*设置注册页面*/
+
+.container article {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+/*设置注册页面头部*/
+
+.container article header {
+    width: 100%;
+    height: 150px;
+}
+
+.container article h1 {
+    line-height: 60px;
+    text-align: center;
+}
+
+.container article header section {
+    height: 80px;
+    text-align: center;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+
+/*设置注册页面子模块*/
+
+.container article section {
+    width: 100%;
+}
+
+.container article section header {
+    width: 100%;
+    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(1, 141, 247, 0.6)), to(rgba(1, 141, 247, 0)));
+    height: 50px;
+    line-height: 50px;
+    font-style: italic;
+    font-size: 1.2em;
+    font-family: "雅黑";
+    font-weight: 900;
+    padding-left: 20px;
+}
+
+.container article section table {
+    width: 100%;
+}
+
+
+/*设置表头宽度*/
+
+.container article section th {
+    text-align: center;
+    width: 20%;
+    height: 30px;
+    vertical-align: middle;
+}
+
+
+/*设置表格宽度*/
+
+.container article section td {
+    width: 80%;
+    height: 30px;
+    line-height: 20px;
+}
+
+
+/*设置输入框样式*/
+
+.container article section input[type="text"] {
+    float: left;
+    font-size: 1em;
+    width: 300px;
+    height: 3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container article section input[type="email"] {
+    float: left;
+    font-size: 1em;
+    width: 300px;
+    height: 3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container article section input[type="date"] {
+    float: left;
+    font-size: 1em;
+    width: 300px;
+    height: 3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*设置选择框样式*/
+
+.container article section select {
+    float: left;
+    font-size: 1em;
+    height: 3rem;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container article section select option {
+    text-align: center;
+}
+
+
+/*设置页内标题栏*/
+
+
+/*选择以同一段字母开始的类*/
+
+[class^="bg-"] {
+    font-size: 1em;
+}
+
+.table tr {
+    height: 20px;
+}
+
+label input[type="checkbox"] {}
+
+
+/*设置提交模块*/
+
+.container footer {
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/*设置span*/
+
+span {
+    color: red;
+}
